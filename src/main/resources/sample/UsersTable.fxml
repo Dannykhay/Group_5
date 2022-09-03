@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="900.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 0 20 20 0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UsersTable">
+   <children>
+      <TableView fx:id="usersTable" layoutY="93.0" prefHeight="460.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="idColum" prefWidth="63.20001524686813" text="ID" />
+          <TableColumn fx:id="firstName" prefWidth="111.20001220703125" text="First Name" />
+            <TableColumn fx:id="lastName" prefWidth="132.7999725341797" text="Last Name" />
+            <TableColumn fx:id="phoneNum" prefWidth="96.0" text="Contact" />
+            <TableColumn fx:id="password" prefWidth="110.39996337890625" text="Password" />
+            <TableColumn fx:id="UserName" prefWidth="116.0" text="User Name" />
+            <TableColumn fx:id="email" prefWidth="143.2000732421875" text="Email" />
+            <TableColumn fx:id="gender" prefWidth="68.800048828125" text="Gender" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

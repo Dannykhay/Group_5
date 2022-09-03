@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="900.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 0 20 20 0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.OrdersTable">
+   <children>
+      <TableView fx:id="orderTable" layoutY="93.0" prefHeight="460.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="57.60000765323639" text="ID" />
+          <TableColumn fx:id="usernameColum" prefWidth="89.60002899169922" text="User Name" />
+            <TableColumn fx:id="locationColum" prefWidth="79.199951171875" text="Location" />
+            <TableColumn fx:id="vendorColum" prefWidth="128.79998779296875" text="Vendor(Food)" />
+            <TableColumn fx:id="quantityColum" prefWidth="62.4000244140625" text="Quantity" />
+            <TableColumn fx:id="momoColum" prefWidth="88.800048828125" text="Momo Num" />
+            <TableColumn fx:id="priceColum" prefWidth="74.40005493164062" text="Price" />
+            <TableColumn fx:id="totalAmtColum" prefWidth="96.7999267578125" text="Total Amt" />
+            <TableColumn fx:id="timeColum" text="Time" />
+            <TableColumn fx:id="dateColum" prefWidth="92.79998779296875" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

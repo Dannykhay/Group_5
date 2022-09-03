@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: maroon;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminPanelControl">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="17.0" layoutY="17.0" prefHeight="662.0" prefWidth="969.0" style="-fx-background-radius: 50;" AnchorPane.bottomAnchor="20.600000000000023" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="13.399999999999977" AnchorPane.topAnchor="17.0">
+         <center>
+            <AnchorPane prefHeight="618.0" prefWidth="900.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 0 20 20 0;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane layoutX="27.0" layoutY="177.0" prefHeight="254.0" prefWidth="317.0">
+                     <children>
+                        <ImageView fitHeight="217.0" fitWidth="293.0" layoutX="11.0" layoutY="19.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../miles_work_image/admin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+         </center>
+         <left>
+            <VBox prefHeight="618.0" prefWidth="211.0" style="-fx-background-color: white; -fx-background-radius: 20 0 0 20;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="50.0" prefWidth="186.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="homBtn" layoutX="19.0" layoutY="2.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-radius: 10;" text="Home">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="homeImg" fitHeight="41.0" fitWidth="41.0" layoutX="27.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../miles_work_image/home.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="50.0" prefWidth="186.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Button layoutX="19.0" layoutY="3.0" mnemonicParsing="false" onAction="#usersButton" prefHeight="46.0" prefWidth="170.0" style="-fx-background-radius: 10;" text="Users">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="userImg" fitHeight="41.0" fitWidth="41.0" layoutX="30.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../miles_work_image/users.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane prefHeight="50.0" prefWidth="186.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Button layoutX="20.0" layoutY="4.0" mnemonicParsing="false" onAction="#ordersButton" prefHeight="46.0" prefWidth="170.0" style="-fx-background-radius: 10;" text="Orders">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="orderImg" fitHeight="41.0" fitWidth="41.0" layoutX="28.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../miles_work_image/orderguy.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Button fx:id="closeBtn" mnemonicParsing="false" onAction="#closeButton" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: Transparent;" text="Close" textFill="MAROON">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" top="100.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#logoutButton" prefHeight="48.0" prefWidth="98.0" style="-fx-background-radius: 10; -fx-background-color: Transparent;" text="Logout" textFill="MAROON">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="TOP_RIGHT" prefHeight="49.0" prefWidth="965.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="32.0" prefWidth="406.0" text="Administrator Use Only" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT Bold" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="250.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

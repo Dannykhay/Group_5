@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupUserController">
+   <bottom>
+      <AnchorPane prefHeight="100.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="registerBtn" layoutX="125.0" layoutY="24.0" mnemonicParsing="false" onAction="#setRegisterBtn" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: maroon;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="closeBtn" layoutX="390.0" layoutY="23.0" mnemonicParsing="false" onAction="#closeBtnOnAction" prefHeight="32.0" prefWidth="80.0" style="-fx-background-color: maroon;" text="Close" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginBtnOnSign" layoutX="292.0" layoutY="24.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="32.0" prefWidth="80.0" style="-fx-background-color: maroon;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Button>
+            <Pane layoutX="1.0" layoutY="81.0" prefHeight="18.0" prefWidth="600.0" style="-fx-background-color: #FFE6E8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.6" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="520.0" prefWidth="526.0" style="-fx-background-color: #FFE6E8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="165.0" layoutY="64.0" prefHeight="60.0" prefWidth="269.0" text="Sign Up, It's Free!" textFill="MAROON">
+               <font>
+                  <Font name="Maiandra GD" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTf" layoutX="73.0" layoutY="164.0" prefHeight="40.0" prefWidth="210.0" promptText="First Name" />
+            <TextField fx:id="emailTf" layoutX="299.0" layoutY="217.0" prefHeight="40.0" prefWidth="214.0" promptText="Email Address" />
+            <TextField fx:id="phoneNumberTf" layoutX="73.0" layoutY="272.0" prefHeight="40.0" prefWidth="440.0" promptText="Phone number" />
+            <Label layoutX="235.0" layoutY="496.0" text="accepting K.T.U mokase terms and conditions" textFill="MAROON">
+               <font>
+                  <Font name="Sylfaen" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="495.0" text="By signing up, you are" textFill="MAROON">
+               <font>
+                  <Font name="Sylfaen" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordNotMatch" alignment="CENTER" layoutX="140.0" layoutY="363.0" prefHeight="26.0" prefWidth="315.0" textFill="RED">
+               <font>
+                  <Font name="Sylfaen" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="registerMsg" alignment="CENTER" layoutX="109.0" layoutY="124.0" prefHeight="27.0" prefWidth="370.0" textFill="RED">
+               <font>
+                  <Font name="Sylfaen" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTf" layoutX="301.0" layoutY="164.0" prefHeight="40.0" prefWidth="210.0" promptText="Last Name" />
+            <PasswordField fx:id="passwordTf" layoutX="73.0" layoutY="324.0" prefHeight="40.0" prefWidth="440.0" promptText="Password" />
+            <PasswordField fx:id="confirmPassTf" layoutX="73.0" layoutY="389.0" prefHeight="40.0" prefWidth="440.0" promptText="Confirm Password" />
+            <ComboBox fx:id="genderCombo" layoutX="209.0" layoutY="446.0" prefHeight="26.0" prefWidth="118.0" promptText="Select gender" />
+            <TextField fx:id="userNameTf" layoutX="73.0" layoutY="217.0" prefHeight="40.0" prefWidth="210.0" promptText="User Name: eg: dankhay" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

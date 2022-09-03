@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: maroon;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AfterLoginControl">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="126.0" prefHeight="693.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="37.0" layoutY="151.0" prefHeight="549.0" prefWidth="832.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="151.0">
+                     <content>
+                        <Pane prefHeight="548.0" prefWidth="830.0" style="-fx-background-radius: 10;">
+                           <children>
+                              <Pane layoutX="45.0" layoutY="64.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="firstImg" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/fistFood.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="2.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵10">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="86.0" layoutY="1.0" prefHeight="35.0" prefWidth="114.0" text="Rice &amp; Salad" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children></Pane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="299.0" layoutY="64.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="secondImg" fitHeight="171.0" fitWidth="214.0" layoutX="12.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/secondFood.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn1" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label alignment="CENTER" layoutX="86.0" layoutY="1.0" prefHeight="35.0" prefWidth="76.0" text="Jollof" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵15">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="551.0" layoutY="64.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="thirdImg" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="9.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/niceFood.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutX="1.0" layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn2" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="80.0" layoutY="1.0" prefHeight="35.0" prefWidth="139.0" text="Rice &amp; Chicken" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label alignment="CENTER" layoutX="2.0" layoutY="1.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵15">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="45.0" layoutY="278.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="forthImg" fitHeight="171.0" fitWidth="214.0" layoutX="9.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/beans.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn3" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="79.0" layoutY="1.0" prefHeight="35.0" prefWidth="150.0" text="Beans &amp; Plantain" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label alignment="CENTER" layoutY="-2.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵10">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="300.0" layoutY="278.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="firthImg" fitHeight="150.0" fitWidth="177.0" layoutX="31.0" layoutY="11.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/fufu.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn4" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="86.0" layoutY="1.0" prefHeight="35.0" prefWidth="114.0" text="Fufu &amp; Meat" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label alignment="CENTER" layoutX="4.0" layoutY="1.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵20">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="551.0" layoutY="278.0" prefHeight="197.0" prefWidth="239.0" style="-fx-background-color: #FFE6E8; -fx-background-radius: 10 10 0 0; -fx-border-color: maroon; -fx-border-radius: 10 10 0 0;">
+                                 <children>
+                                    <ImageView fx:id="sixImg" fitHeight="150.0" fitWidth="181.0" layoutX="29.0" layoutY="5.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../../miles_work_image/kenkey.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutX="1.0" layoutY="161.0" prefHeight="35.0" prefWidth="238.0" style="-fx-background-color: maroon;">
+                                       <children>
+                                          <Button fx:id="orderBtn5" mnemonicParsing="false" onAction="#order" prefHeight="35.0" prefWidth="74.0" style="-fx-background-radius: 0 20 20 0;" text="Order">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="80.0" layoutY="1.0" prefHeight="35.0" prefWidth="131.0" text="Kenkey &amp; Fish" textFill="WHITE">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Label alignment="CENTER" layoutX="2.0" layoutY="-2.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: Transparrent;" text="₵10">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Label layoutX="37.0" layoutY="25.0" prefHeight="38.0" prefWidth="117.0" text="Specialties">
+                                 <font>
+                                    <Font name="Ebrima" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <HBox prefHeight="121.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="122.0" prefWidth="900.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="woodImg" fitHeight="126.0" fitWidth="900.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" smooth="false" AnchorPane.leftAnchor="0.6000000000000227" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-1.0">
+                     <image>
+                        <Image url="@../../../../miles_work_image/wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="LargeVegImg" fitHeight="201.0" fitWidth="399.0" layoutX="-4.0" layoutY="-89.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../miles_work_image/forFruit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="smallVegImg" fitHeight="106.0" fitWidth="192.0" layoutX="353.0" layoutY="34.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../miles_work_image/fruit1-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="usernameLb" layoutX="643.0" layoutY="16.0" prefHeight="38.0" prefWidth="139.0" text="Welcome Danny" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="790.0" layoutY="15.0" prefHeight="35.0" prefWidth="5.0" text="|" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logoutBtn" layoutX="788.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutButtonOnMain" prefHeight="38.0" prefWidth="85.0" style="-fx-background-color: Transparent;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="guyManImg" fitHeight="85.0" fitWidth="114.0" layoutX="740.0" layoutY="40.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../miles_work_image/moto.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
